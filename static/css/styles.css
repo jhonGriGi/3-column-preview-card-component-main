@@ -29,16 +29,16 @@ main {
   width: 320px;
 }
 
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1000px) {
   main {
-    margin-top: 150px;
-    width: 1000px;
     display: flex;
+    width: 800px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   main {
-    width: 70%;
+    width: 1050px;
+    font-size: 20px;
   }
 }
 .container1 {
@@ -83,6 +83,15 @@ main {
   border-radius: 25px;
   font-family: "Lexend Deca", sans-serif;
 }
+.container1 .button1:hover {
+  cursor: pointer;
+  background: var(--BrightOrange);
+  color: var(--TransparentWhite);
+  border: 2px solid var(--TransparentWhite);
+}
+.container1 .button1:active {
+  transform: scale(0.9);
+}
 
 .container2 {
   background: var(--DarkCyan);
@@ -125,6 +134,15 @@ main {
   height: 40px;
   border-radius: 25px;
   font-family: "Lexend Deca", sans-serif;
+}
+.container2 .button2:hover {
+  cursor: pointer;
+  color: var(--TransparentWhite);
+  background: var(--DarkCyan);
+  border: 2px solid var(--TransparentWhite);
+}
+.container2 .button2:active {
+  transform: scale(0.9);
 }
 
 .container3 {
@@ -169,40 +187,53 @@ main {
   border-radius: 25px;
   font-family: "Lexend Deca", sans-serif;
 }
+.container3 .button3:hover {
+  cursor: pointer;
+  color: var(--TransparentWhite);
+  background: var(--VeryDarkCyan);
+  border: 2px solid var(--TransparentWhite);
+}
+.container3 .button3:active {
+  transform: scale(0.9);
+}
 
-@media screen and (min-width: 1160px) {
-  .containers {
-    font-size: 2.2em;
+@media screen and (min-width: 1000px) {
+  .container1__h1, .container2__h1, .container3__h1 {
+    margin: 20px 0 20px 0;
   }
 
-  .container1__h1,
-.container2__h1,
-.container3__h1 {
-    margin: 20px 0 0 20px;
+  .container3 .buttons,
+.container2 .buttons,
+.container1 .buttons {
+    margin: 50px 0 20px 50px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container1__h1, .container2__h1, .container3__h1 {
+    font-size: 2.8em;
+  }
+  .container1__p, .container2__p, .container3__p {
+    font-size: 2.4em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containers .container1__img {
+    margin: 30px 0 10px 100px;
   }
 
-  .container1__p,
-.container2__p,
-.container3__p {
-    margin: 20px 0 0 20px;
+  .container1__h1, .container2__h1, .container3__h1 {
     font-size: 2.5em;
   }
-
-  .container1__img,
-.container2__img,
-.container3__img {
-    margin: 40px 0 10px 70px;
-    width: 90px;
-    height: 90px;
+  .container1__p, .container2__p, .container3__p {
+    font-size: 2.3em;
   }
 
-  .buttons {
-    margin: 50px 0 0 20px;
-    border: 1px solid black;
-  }
-
-  .buttons:active {
-    transform: scale(0.9);
+  .container1 .buttons,
+.container2 .buttons,
+.container3 .buttons {
+    margin: 50px 0 20px 60px;
+    font-size: 1.2em;
+    height: 50px;
   }
 }
 .attribution {
@@ -212,6 +243,13 @@ main {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 1000px) {
+  .attribution {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

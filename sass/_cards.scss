@@ -46,6 +46,17 @@
     border-radius: 25px;
     font-family: 'Lexend Deca', sans-serif;
   }
+
+  & .button1:hover {
+    cursor: pointer;
+    background: var(--BrightOrange);
+    color: var(--TransparentWhite);
+    border: 2px solid var(--TransparentWhite)
+  }
+
+  & .button1:active {
+    transform: scale(.9)
+  }
 }
 
 .container2 {
@@ -92,6 +103,17 @@
     height: 40px;
     border-radius: 25px;
     font-family: 'Lexend Deca', sans-serif;
+  }
+
+  & .button2:hover {
+    cursor: pointer;
+    color: var(--TransparentWhite);
+    background: var(--DarkCyan);
+    border: 2px solid var(--TransparentWhite)
+  }
+
+  & .button2:active {
+    transform: scale(.9)
   }
 }
 
@@ -140,40 +162,81 @@
     border-radius: 25px;
     font-family: 'Lexend Deca', sans-serif;
   }
+
+  & .button3:hover {
+    cursor: pointer;
+    color: var(--TransparentWhite);
+    background: var(--VeryDarkCyan);
+    border: 2px solid var(--TransparentWhite)
+  }
+
+  & .button3:active {
+    transform: scale(.9)
+  }
 }
 
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1000px) {
+  .container {
+    &1__h1,
+    &2__h1,
+    &3__h1 {
+      margin: 20px 0 20px 0
+    }
+  }
+
+  .container3,
+  .container2,
+  .container1 {
+    & .buttons {
+      margin: 50px 0 20px 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    &1__h1,
+    &2__h1,
+    &3__h1 {
+      font-size: 2.8em;
+    }
+
+    &1__p,
+    &2__p,
+    &3__p {
+      font-size: 2.4em;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .containers {
-    font-size: 2.2em;
+    & .container1__img {
+      margin: 30px 0 10px 100px;
+    }
   }
 
-  .container1__h1,
-  .container2__h1,
-  .container3__h1 {
-    margin: 20px 0 0 20px
+  .container {
+    &1__h1,
+    &2__h1,
+    &3__h1 {
+      font-size: 2.5em;
+    }
+
+    &1__p,
+    &2__p,
+    &3__p {
+      font-size: 2.3em;
+    }
   }
 
-  .container1__p,
-  .container2__p,
-  .container3__p {
-    margin: 20px 0 0 20px;
-    font-size: 2.5em;
-  }
-
-  .container1__img,
-  .container2__img,
-  .container3__img {
-    margin: 40px 0 10px 70px;
-    width: 90px;
-    height: 90px;
-  }
-
-  .buttons {
-    margin: 50px 0 0 20px;
-    border: 1px solid black
-  }
-
-  .buttons:active {
-    transform: scale(.9);
+  .container1,
+  .container2,
+  .container3 {
+    & .buttons {
+      margin: 50px 0 20px 60px;
+      font-size: 1.2em;
+      height: 50px;
+    }
   }
 }

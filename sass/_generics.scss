@@ -22,17 +22,16 @@ main {
   width: 320px;
 }
 
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1000px) {
   main {
-    margin-top: 150px;
-    width: 1000px;
     display: flex;
+    width: 800px;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  main{
-    width: 70%;
+@media screen and (min-width: 1366px) {
+  main {
+    width: 1050px;
+    font-size: 20px;
   }
 }
-
